@@ -5,5 +5,13 @@
       ":semanticCommits",
       ":semanticCommitTypeAll(ci)"
     ],
-    "separateMultipleMajor": true
+    "separateMultipleMajor": true,
+    "packageRules": [
+      {
+        "matchDatasources": ["hashicorp"],
+        "matchPackageNames": ["terraform"],
+        "versioning": "1.5.7",
+        "rangeStrategy": "pin"
+      }
+    ]
   }
