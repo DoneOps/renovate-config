@@ -8,10 +8,8 @@
     "separateMultipleMajor": true,
     "packageRules": [
       {
-        "matchDatasources": ["hashicorp"],
         "matchPackageNames": ["terraform"],
-        "versioning": "1.5.7",
-        "rangeStrategy": "pin"
+        "allowedVersions": "1.5.7"
       }
     ]
   }
