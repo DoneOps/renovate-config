@@ -1,15 +1,21 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-      "config:base",
-      ":semanticCommits",
-      ":semanticCommitTypeAll(ci)"
-    ],
-    "separateMultipleMajor": true,
-    "packageRules": [
-      {
-        "matchPackageNames": ["terraform"],
-        "allowedVersions": "1.5.7"
-      }
-    ]
-  }
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(ci)"
+  ],
+  "separateMultipleMajor": true,
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "hashicorp/terraform"
+      ],
+      "matchDepTypes": [
+        "required_version"
+      ],
+      "groupName": "terraform",
+      "allowedVersions": "1.5.7"
+    }
+  ]
+}
