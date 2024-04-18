@@ -9,7 +9,7 @@
   "packageRules": [
     {
       "matchPackageNames": [
-        "hashicorp/terraform"
+        "terraform"
       ],
       "matchDepTypes": [
         "required_version"
