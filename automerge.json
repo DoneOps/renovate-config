@@ -3,7 +3,7 @@
     "extends": [
       "config:base",
       ":semanticCommits",
-      ":semanticCommitTypeAll(ci)"
+      ":semanticCommitTypeAll(fix)"
     ],
     "packageRules": [
       {
