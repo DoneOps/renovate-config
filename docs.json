@@ -5,16 +5,17 @@
     ":semanticCommits",
     ":semanticCommitTypeAll(chore)"
   ],
-  "separateMultipleMajor": true,
   "schedule": ["before 6am on monday"],
+  "separateMajorMinor": false,
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["before 6am on monday"]
+    "schedule": ["before 6am on monday"],
+    "groupName": "docs toolchain"
   },
   "packageRules": [
     {
-      "matchManagers": ["pep621"],
-      "groupName": "mkdocs toolchain"
+      "matchPackageNames": ["*"],
+      "groupName": "docs toolchain"
     }
   ]
 }
