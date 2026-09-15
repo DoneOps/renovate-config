@@ -5,17 +5,9 @@
     ":semanticCommits",
     ":semanticCommitTypeAll(fix)"
   ],
-  "separateMultipleMajor": true,
-  "packageRules": [
-    {
-      "matchPackageNames": [
-        "terraform"
-      ],
-      "matchDepTypes": [
-        "required_version"
-      ],
-      "groupName": "terraform",
-      "allowedVersions": "1.5.7"
-    }
-  ]
+  "schedule": ["* * * * 1"],
+  "timezone": "UTC",
+  "rebaseWhen": "conflicted",
+  "updateNotScheduled": false,
+  "separateMultipleMajor": true
 }
