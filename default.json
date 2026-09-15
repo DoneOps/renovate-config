@@ -6,6 +6,7 @@
     ":semanticCommitTypeAll(fix)"
   ],
   "schedule": ["* * * * 1"],
+  "timezone": "UTC",
   "rebaseWhen": "conflicted",
   "updateNotScheduled": false,
   "separateMultipleMajor": true
